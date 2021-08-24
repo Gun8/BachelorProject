@@ -1,0 +1,122 @@
+
+.analytics-box{
+    width: 90%;
+    margin: 1em auto 0;
+    position: relative;
+}
+
+.filter{
+    position: absolute;
+    top:5em;
+    right: 0;
+    width: 40%;
+    min-width: 10em;
+    background: #fff;
+    box-shadow: #00000047 0 5px 15px 0px;
+}
+
+.filter-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+}
+
+.filter-titles{
+    display: flex;
+    color: rgba(0, 0, 0, 0.54);
+    justify-content: space-between;
+    width: 90%;
+    transform: translateX(10%);
+}
+
+.filter-titles span{
+    font-size: 1em;
+    display: inline-block;
+    width: 33.333%;
+}
+
+.filter-del{
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.filter-del:hover{
+    background: #e5e5e5;
+    cursor: pointer;
+}
+
+.filter select,.filter input{
+    width: 100%;
+    border: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-bottom: 1px black solid;
+    outline: none;
+    height: 3em;
+}
+
+.filter select:hover,.filter input:hover{
+    padding-top: 0.25em;
+    border-bottom: 0.25em black solid;
+}
+
+.filter select:focus,.filter input:focus{
+    padding-top: 0.25em;
+    background: #f2f2f2;
+    border-bottom: 0.25em #1976d2 solid;
+}
+
+
+.filter-content{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.filter-select ,.filter-input{
+    width: 33.3333%;
+}
+
+.add-filter-btn{
+    position: relative;
+    color: #2b80d5;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em;
+    margin: 0.3em;
+    border-radius: 0.3em;
+    transition: background-color 100ms ease-in;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.add-filter-btn:hover{
+    background: #f6fafe;
+    cursor: pointer;
+}
+
+.add-filter-btn:active{
+    background: #b4d3f2;
+    cursor: pointer;
+}
+
+
+.add-filter-btn .add-filter-icon{
+    display: inline-flex;
+}
+
+.filter{
+    display: none;
+}
+

@@ -1,9 +1,7 @@
-import React from "react";
-
-const getData = async (url) => {
+const getJSON = async (url) => {
      let data = fetch(url);
 
      return await data.then((res) => res.json());
 };
 
-export {getData};
+export default getJSON;

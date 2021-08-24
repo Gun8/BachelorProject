@@ -1,0 +1,171 @@
+.entry-page{
+    background: url("../../img/power-station.jpg") center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: #d7d4df;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.entry-page form {
+    min-height: 21rem;
+    min-width: 18rem;
+    position: relative;
+    background: rgba(0,0,0,0.4);
+    width: 33.3vw;
+    height: 50vh;
+    margin: 0 auto;
+    transform: translateY(calc(50vh - 50%));
+}
+.entry-page form.sign-up {
+    display: none;
+}
+
+.authorization-block {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+form small {
+    display: none;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: red;
+    font-weight: bold;
+}
+
+
+.username-box.valid,
+.password-box.valid{
+    border-color: green;
+}
+
+.username-box.invalid,
+.password-box.invalid{
+    border-color: red;
+}
+
+.username-box,
+.password-box,
+.submit {
+    width: 90%;
+}
+
+.username-box,
+.password-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0.5em auto 0;
+    padding-bottom: 0.2em;
+    font-size: 2em;
+    border-bottom: 1px rgba(215,215,215,0.6) solid;
+}
+
+.username-box input,
+.password-box input{
+    line-height: 1em;
+    padding-left: 5% ;
+    width: 90%;
+    font-size: 1em;
+    color: #d7d4df;
+    font-family: 'Quicksand', sans-serif;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.username-box input::placeholder,
+.password-box input::placeholder{
+    color: #d7d4df;
+
+}
+
+
+.submit{
+    margin-top : 2.5em;
+    height: 2.5em;
+    border-radius: 2em;
+    background: #ff3366;
+    font-size: 1.5em;
+    color: #ececec;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+form.sign-up .submit{
+    margin-top : 1em;
+}
+
+.submit:hover{
+    background:#ff4170;
+}
+.submit:active{
+    background:#e8305e;
+}
+
+
+.icon{
+    color: #e0e0e0;
+}
+
+form p{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 90%;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+form.sign-up p{
+    bottom: 3%;
+}
+
+form p span{
+    white-space: nowrap;
+}
+
+form p span.sing-up-btn,
+form p span.sing-in-btn {
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 0.15em;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+}
+
+.tooltip{
+    visibility: hidden;
+    width: 55%;
+    background-color: #d7d4df;
+    color: red;
+    font-weight: bold;
+    font-size: 0.5em;
+    text-align: left;
+    border-radius: 6px;
+    padding: 0.5em 0.5em 1em;
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    top: 120%;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    border: 5px solid transparent;
+    border-bottom-color: #d7d4df;
+}

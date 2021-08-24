@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "nodemon server/index.js",
     "build": "cd client && npm install && npm run build"
   },
   "engines": {
@@ -14,6 +14,25 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@material-ui/data-grid": "^4.0.0-alpha.27",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@material-ui/x-grid": "^4.0.0-alpha.27",
+    "@material-ui/x-license": "^4.0.0-alpha.25",
+    "@nivo/line": "^0.69.1",
+    "body-parser": "^1.19.0",
+    "devextreme-react": "^20.2.7",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "react-icons": "^4.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.3",
+    "watch": "^1.0.2",
+    "xlsx": "^0.16.9"
   }
 }

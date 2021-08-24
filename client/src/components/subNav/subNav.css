@@ -1,0 +1,25 @@
+ul.subnav{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 1.3em;
+    padding: 0.5em 0;
+    border-bottom: 1px black solid;
+}
+
+ul.subnav li{
+    padding: 0 1em;
+}
+
+ul.subnav li:hover{
+    cursor: pointer;
+}
+
+ul.subnav li#table{
+    border-right: 1px solid black;
+}
+
+ul.subnav li.active{
+    color: #256ce1;
+    font-weight: 600;
+}

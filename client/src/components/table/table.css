@@ -1,0 +1,17 @@
+
+.MuiSwitch-colorSecondary.Mui-checked,
+.MuiCheckbox-colorSecondary.Mui-checked,
+.MuiTypography-subtitle1
+{
+    color: #007bff !important;
+}
+
+.MuiTableRow-root.Mui-selected, .MuiTableRow-root.Mui-selected:hover,
+.makeStyles-highlight-6,.MuiButtonBase-root:hover{
+    background-color: rgba(0,123,255,0.08) !important;
+}
+.MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track{
+    background-color: rgba(0,123,255,0.5) !important;
+}
+
+

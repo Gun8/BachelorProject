@@ -1,0 +1,16 @@
+.homepage{
+    background: url("../../img/power-station.jpg") center;
+    height: calc(100vh - 80px);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.homepage .cover{
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: #256ce1;
+}
